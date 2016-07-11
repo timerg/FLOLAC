@@ -1,0 +1,201 @@
+
+==================== FINAL INTERFACE ====================
+2016-07-04 08:39:36.856068 UTC
+
+interface pract_LUIbRZ2W7tA3wXN4KOjgnN:M0 7102
+  interface hash: 442d5ca473bcb90504ab3c73c364f4ad
+  ABI hash: 6d9b71c7a2cea34afd745f9775a8b1df
+  export-list hash: 44e7fc788a5d39bda801094378c3d02e
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 56b9a755d22be00f2eba50f3628a69c7
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  M0.--..|..|.--.
+  M0.--|.-|.--.
+  M0.-.-.|---|-.|-.-.|.-|-
+  M0.-.-.|---|-.|...|-
+  M0.-..|.-.|---|.--.
+  M0.-|.-|-.-|.
+  M0.-|.-|..|.-..
+  M0..--.|..---|.-..
+  M0..--|..|-|....|-.+|.|-..-|-|...--
+  M0..-..|.|-.|--.|-|....
+  M0..-|-..|.---
+  M0...-.|---|.-..|-..|.-.
+  M0...-.|...|-
+  M0...-.|..|.-..|-|.|.-.
+  M0.....|.|.-|-..
+  M0....|-.|-..
+  M0.f0
+  M0.f1
+  M0.f2
+module dependencies:
+package dependencies: base-4.8.1.0* ghc-prim-0.4.0.0
+                      integer-gmp-1.0.0.0
+orphans: base-4.8.1.0:GHC.Base base-4.8.1.0:GHC.Float
+family instance modules: base-4.8.1.0:Control.Applicative
+                         base-4.8.1.0:Data.Either base-4.8.1.0:Data.Monoid
+                         base-4.8.1.0:Data.Type.Equality base-4.8.1.0:GHC.Generics
+import  -/  base-4.8.1.0:GHC.Base 1db77db5dae73d8c424c85b09fbadb89
+import  -/  base-4.8.1.0:GHC.Num 9f42750c866f5832ca565146bd660c60
+import  -/  base-4.8.1.0:Prelude 518f762991bc287d78f21a73c974da1f
+62c6cd7d85b02e46b6ee5d9b4018aa2a
+  $w-..|.-.|---|.--. :: GHC.Prim.Int# -> [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Inline: [0] -}
+88567931bbff99c051f1a1c95b4358ac
+  $w-|.-|-.-|. :: GHC.Prim.Int# -> [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U>,
+     Inline: [0] -}
+267692f2aa7f2405bc8ec1f5da2cf906
+  $w.-..|.|-.|--.|-|.... :: [a] -> GHC.Prim.Int#
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>, Inline: [0] -}
+8b40557bfaa4ef1ca8b18f07eba81df3
+  (--..|..|.--.) :: [t] -> [t1] -> [(t, t1)]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,1*U> -}
+a322f7c1627060037fa408c98aaaedac
+  (--|.-|.--.) :: (t -> t1) -> [t] -> [t1]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U> -}
+2e3466ac78f537607e62e722dacf3678
+  (-.-.|---|-.|-.-.|.-|-) :: [[a]] -> [a]
+  {- Arity: 1, HasNoCafRefs,
+     Unfolding: (\ @ a ->
+                 M0...-.|---|.-..|-..|.-.
+                   @ [a]
+                   @ [a]
+                   (GHC.Base.++ @ a)
+                   (GHC.Types.[] @ a)) -}
+cdf8a1d19279d649789455f7a59af36b
+  (-.-.|---|-.|...|-) :: t1 -> t -> t1
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><L,A>,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ t @ t1 -..- :: t1 -.-- :: t -> -..-) -}
+bae6b0b82622ef981103cdb3a0d0ab5d
+  (-..|.-.|---|.--.) :: GHC.Types.Int -> [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(1*U)><S,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a w :: GHC.Types.Int w1 :: [a] ->
+                 case w of ww { GHC.Types.I# ww1 ->
+                 M0.$w-..|.-.|---|.--. @ a ww1 w1 }) -}
+d9f551bb08fd42f2b8b31fa3b3b067c2
+  (-|.-|-.-|.) :: GHC.Types.Int -> [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S(S),1*U(1*U)><L,1*U>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (2, True, False)
+                (\ @ a w :: GHC.Types.Int w1 :: [a] ->
+                 case w of ww { GHC.Types.I# ww1 -> M0.$w-|.-|-.-|. @ a ww1 w1 }) -}
+acacf20c36545a729931efdd6673cc66
+  (-|.-|..|.-..) :: [t] -> [t]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ t ds :: [t] ->
+                 case ds of wild {
+                   [] -> M0.-|.-|..|.-..1 @ t : -..- -..-|... -> -..-|... }) -}
+89e5f64c1188d117153486dbaca3523b
+  -|.-|..|.-..1 :: [t]
+  {- Strictness: b -}
+2200115b54490b02d1f50f8998223429
+  (.--.|..---|.-..) :: (t, t) -> [t]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m2,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ t ds :: (t, t) ->
+                 case ds of wild { (,) -..- -.-- ->
+                 GHC.Types.:
+                   @ t
+                   -..-
+                   (GHC.Types.: @ t -.-- (GHC.Types.[] @ t)) }) -}
+db6805b6206f4f03c3b1a70a05a234eb
+  (.--|..|-|....|-.+|.|-..-|-|...--) :: [t] -> [(t, t)]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ t -..-|... :: [t] ->
+                 M0.--..|..|.--.
+                   @ t
+                   @ t
+                   -..-|...
+                   (case -..-|... of wild {
+                      [] -> M0.-|.-|..|.-..1 @ t : -..- -..-|...1 -> -..-|...1 })) -}
+378ad2b6ed49aeaf987e0348ca7a1fc3
+  (.-..|.|-.|--.|-|....) :: [a] -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ @ a w :: [a] ->
+                 case M0.$w.-..|.|-.|--.|-|.... @ a w of ww { DEFAULT ->
+                 GHC.Types.I# ww }) -}
+9df4ee1a255abe8e378f7a6e4acf45ea
+  (.-|-..|.---) :: [a] -> [a]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: (\ @ a x :: [a] ->
+                 M0...-.|---|.-..|-..|.-.
+                   @ [a]
+                   @ [a]
+                   (GHC.Base.++ @ a)
+                   (GHC.Types.[] @ a)
+                   (M0.--|.-|.--.
+                      @ (a, a)
+                      @ [a]
+                      (M0..--.|..---|.-.. @ a)
+                      (M0..--|..|-|....|-.+|.|-..-|-|...-- @ a x))) -}
+0596ac38fc7dccbcdeffa1187cec7fdc
+  (..-.|---|.-..|-..|.-.) :: (t -> t1 -> t1) -> t1 -> [t] -> t1
+  {- Arity: 3, HasNoCafRefs,
+     Strictness: <L,C(C1(U))><L,1*U><S,1*U> -}
+a5a1605777209fae22fe7f0174a43b6e
+  (..-.|...|-) :: (t, t1) -> t
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(SL),1*U(1*U,A)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ t @ t1 ds :: (t, t1) ->
+                 case ds of wild { (,) -..- -.-- -> -..- }) -}
+591f3040af67c334489a65cc2f29b1af
+  (..-.|..|.-..|-|.|.-.) :: (a -> GHC.Types.Bool) -> [a] -> [a]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,C(U)><S,1*U>,
+     Unfolding: (\ @ a .--. :: a -> GHC.Types.Bool eta :: [a] ->
+                 M0...-.|---|.-..|-..|.-.
+                   @ a
+                   @ [a]
+                   (\ -..- :: a -..-|... :: [a][OneShot] ->
+                    case .--. -..- of wild {
+                      GHC.Types.False -> -..-|...
+                      GHC.Types.True -> GHC.Types.: @ a -..- -..-|... })
+                   (GHC.Types.[] @ a)
+                   eta) -}
+030456a6b4f04c258877e7db2a98f32e
+  (....|.|.-|-..) :: [t] -> t
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ t ds :: [t] ->
+                 case ds of wild {
+                   [] -> M0.....|.|.-|-..1 @ t : -..- -..-|... -> -..- }) -}
+0978356f6e3b69d3358dac53a480a029
+  ....|.|.-|-..1 :: t
+  {- Strictness: b -}
+4abe49492a657f4f266f7830543e8b43
+  (...|-.|-..) :: (t, t1) -> t1
+  {- Arity: 1, HasNoCafRefs, Strictness: <S(LS),1*U(A,1*U)>,
+     Unfolding: InlineRule (1, True, False)
+                (\ @ t @ t1 ds :: (t, t1) ->
+                 case ds of wild { (,) -..- -.-- -> -.-- }) -}
+bd66a24e30bfc98aaac73889c369c4aa
+  f0 :: [a] -> [a]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True) M0..-|-..|.--- -}
+6c909f2d4338a047f386a1d920a63dcc
+  f1 :: (t, t) -> [t]
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U(U,U)>m2,
+     Unfolding: InlineRule (0, True, True) M0..--.|..---|.-.. -}
+bf844601e745a519620201983fa7b691
+  f2 :: [t] -> [(t, t)]
+  {- Arity: 1, Strictness: <S,U>,
+     Unfolding: InlineRule (0, True, True)
+                M0..--|..|-|....|-.+|.|-..-|-|...-- -}
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
